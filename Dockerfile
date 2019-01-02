@@ -36,6 +36,7 @@ RUN update-alternatives --install \
     /usr/local/bin/pip3 pip3 /usr/local/bin/pip3.6 1
 
 RUN pip3 install -U pip
+RUN pip3 install --upgrade psycopg2
 
 WORKDIR ${DEPLOY_DIR}
 
